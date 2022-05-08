@@ -1,0 +1,48 @@
+1. git config user.name 查看用户名
+
+    git config user.email 查看邮箱
+
+2. git config --global user.name "xxx"  切换用户。
+
+   git config --global user.email "xxx" 切换邮箱。
+
+git 提交操作：
+# 提交所有修改的文件
+1.git add . 
+# 提交指定文件
+2.git add （文件名）
+#提交说明
+3.git commit -m "说明"
+#推送到远程分支
+4.git push origin 远程分支
+
+# 解决冲突之后需要再进行一次提交操作
+git add .
+# 提交代码到本地仓库
+git commit -m '解决冲突'
+# 提交代码到线上仓库
+git push origin master
+
+#拉取远程分支代码
+git pull origin 远程分支名
+
+#切换分支操作
+git checkout 分支名
+
+#创建分支操作
+git branch 分支名
+
+#查看所有分支
+git branch -a
+
+#更新分支操作
+git fetch --all
+
+#合并分支
+git merge newbranch
+
+#创建远程分支
+git push origin 分支名
+
+#删除远程分支
+git push origin --delete localbranch
